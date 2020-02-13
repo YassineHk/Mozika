@@ -16,7 +16,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                sh 'docker run -p 9090:80 sparkdemo'
+                sh 'docker run --name spark --rm spark -p 9090:80 sparkdemo'
             }
         }
     }
