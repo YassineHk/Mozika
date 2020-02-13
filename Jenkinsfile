@@ -11,7 +11,7 @@ pipeline {
         stage('docker') {
             steps {
                 sh 'docker -v'
-                sh 'docker build -t sparkdemo'
+                sh 'docker build -t sparkdemo .'
             }
         }
         stage('run') {
