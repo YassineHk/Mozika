@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh 'docker rm -f spark'
                 sh 'docker run --name spark -p 9090:80 -d sparkdemo'
+                sh 'open http://localhost:9090'
             }
         }
     }
