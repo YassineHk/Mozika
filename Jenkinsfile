@@ -16,7 +16,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                echo 'docker run -p 9000:9000 sparkdemo'
+                echo 'docker run -p 7000:80 sparkdemo'
             }
         }
     }
