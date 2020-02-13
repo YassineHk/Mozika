@@ -1,3 +1,3 @@
 FROM nginx:1.15.2-alpine
 COPY build /usr/share/nginx/html
-EXPOSE 7000
+EXPOSE 80
